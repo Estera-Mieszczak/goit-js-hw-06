@@ -1,4 +1,5 @@
 const registerForm = document.querySelector(".login-form");
+let user = {};
 registerForm.addEventListener("submit", handleSubmit);
 function handleSubmit(event) {
     event.preventDefault();
@@ -8,6 +9,7 @@ function handleSubmit(event) {
     if (userEmail === "" || userPassword === "") {
         return alert("Please fill in all the fields!");
     }
-  let user = {Email: userEmail, Password: userPassword};
+  user.email = userEmail;
+  user.password = userPassword;
   console.log(user);
 }
