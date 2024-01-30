@@ -12,4 +12,5 @@ function handleSubmit(event) {
   user.email = userEmail;
   user.password = userPassword;
   console.log(user);
+  registerForm.reset();
 }
